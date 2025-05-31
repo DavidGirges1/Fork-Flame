@@ -1,0 +1,327 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  background-color: #1c1c1c;
+  color: #EDE0E0;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #EDE0E0;
+  transition: linear 0.3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.profile-info h2 {
+  font-size: 4rem;
+  margin-left: 3rem;
+  color: white;
+}
+.profile-info .profile-logout-trigger {
+  color: white;
+  margin-right: 6rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+}
+.profile-info .profile-logout-trigger:hover {
+  background-color: rgb(84, 89, 84);
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+.modal .modal-box {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 40px 50px;
+  border-radius: 30px;
+  width: 450px;
+  max-width: 90%;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-30px);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  animation: slideIn 0.5s ease-out forwards;
+}
+.modal.show .modal-box {
+  transform: translateY(0);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Cancelbtn,
+.logoutbtn {
+  padding: 15px 20px;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.Cancelbtn {
+  background-color: rgb(95, 100, 100);
+  color: white;
+}
+.Cancelbtn:hover {
+  background-color: rgb(134, 136, 138);
+}
+
+.logoutbtn {
+  background-color: red;
+  color: #ecf0f3;
+}
+.logoutbtn:hover {
+  background-color: rgb(84, 89, 84);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #D7263D;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #ac1e31;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #D7263D;
+  border: 2px solid #D7263D;
+}
+.btn-secondary:hover {
+  background-color: #D7263D;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar {
+  background-color: #0f0f0f;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #363636;
+}
+.navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 2.2rem;
+  color: #D7263D;
+}
+.navbar .logo span {
+  color: white;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+.navbar .nav-links .nav-item {
+  border-radius: 30px;
+  display: block;
+  font-size: 1rem;
+  margin-right: 50px;
+  padding: 7px 5px;
+  color: #dbd9d9;
+  border-top: solid;
+  transition: transform 0.3s ease;
+}
+.navbar .nav-links .nav-item:hover {
+  background: #d7263d;
+  transform: scale(1.2);
+}
+.navbar .nav-links li {
+  margin-left: 3rem;
+}
+.navbar .nav-links a {
+  font-size: 1.6rem;
+}
+.navbar .profile-icon img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #D7263D;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-card {
+  background-color: #242424;
+  border: 1px solid #D7263D;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.profile-card__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto 2rem auto;
+  border: 3px solid #A9A9A9;
+}
+.profile-card__name {
+  font-size: 2.6rem;
+  color: #EDE0E0;
+  margin-bottom: 1.5rem;
+}
+.profile-card__info {
+  margin-bottom: 2.5rem;
+}
+.profile-card__info p {
+  font-size: 1.6rem;
+  color: #EDE0E0;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.profile-card__info p strong {
+  color: #A9A9A9;
+  margin-right: 0.5rem;
+}
+.profile-card__actions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #363636;
+}
+.profile-card__actions p {
+  font-size: 1.4rem;
+  color: #EDE0E0;
+  margin-bottom: 1rem;
+}
+.profile-card__actions p a {
+  color: #D7263D;
+  font-weight: bold;
+}
+.profile-card__actions p a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: #080808;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.site-footer .social-icons {
+  margin-bottom: 2.5rem;
+}
+.site-footer .social-icons a {
+  display: inline-block;
+  color: #A9A9A9;
+  font-size: 2.4rem;
+  margin: 0 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.site-footer .social-icons a:hover {
+  color: #D7263D;
+  transform: translateY(-3px);
+}
+.site-footer .social-icons a i {
+  vertical-align: middle;
+}
+.site-footer .footer-nav {
+  margin-bottom: 2.5rem;
+}
+.site-footer .footer-nav .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.site-footer .footer-nav .footer-links li {
+  margin: 0.5rem 1.5rem;
+}
+.site-footer .footer-nav .footer-links li a {
+  color: #EDE0E0;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.site-footer .footer-nav .footer-links li a:hover {
+  color: #D7263D;
+  text-decoration: underline;
+}
+.site-footer .copyright {
+  font-size: 1.4rem;
+  color: #A9A9A9;
+  margin-top: 0;
+}/*# sourceMappingURL=style.css.map */
