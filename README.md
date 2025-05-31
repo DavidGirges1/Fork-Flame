@@ -42,4 +42,8 @@ To run the project locally:
 2. Navigate to project folder
    ~~~bash
    cd fork-and-flame
-3. run index.html 
+3. run index.html
+
+## 🛠️ Further Improvements
+- Enhance responsivity on mobile devices for better user experience across screen sizes
+- add backend functionality 
