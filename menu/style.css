@@ -1,0 +1,481 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Rough", sans-serif;
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----- Navbar ----- */
+.navbar {
+    background-color: #0f0f0f;
+    padding: 15px 0;
+    border-bottom: 1px solid #303030;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    color: #D7263D;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #EDE0E0;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links .nav-item {
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 50px;
+    padding: 7px 5px;
+    color: #dbd9d9;
+    border-top: solid;
+    transition: transform 0.3s ease;
+}
+
+.navbar .nav-links .nav-item:first-child {
+    margin-left: 0;
+}
+
+.navbar .nav-links .nav-item:hover {
+    background-color: #D7263D;
+    transform: scale(1.2);
+}
+
+.navbar .nav-links .nav-item a {
+    font-size: 16px;
+    color: #EDE0E0;
+    display: block;
+    padding: 0 10px;
+}
+
+.navbar .profile-icon img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border: 1px solid #D7263D;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+
+.container {
+    background-color: #060606;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container h1 {
+    font-size: 30px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #d7263d;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+
+/* Menu */
+:root {
+    --heading-color: #d7263d;
+    --text-color: #a9a9a9;
+    --bg-color: #1c1c1c;
+    --item-bg: rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+    color: var(--heading-color);
+}
+
+p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.mediamword {
+    color: var(--text-color);
+}
+
+.container3 {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#menu {
+    padding: 3rem 0;
+}
+
+#menu .heading {
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding: 20px 0;
+
+}
+
+#menu .heading h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#menu .heading p {
+    color: #d7263d;
+}
+
+#menu .heading .menu-buttons {
+    margin: 2rem 0;
+}
+
+#menu .heading .menu-buttons .fork-but {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 1px 5px;
+    background-color: #1c1c1c;
+    color: #d7263d;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item-header .fa-cart-shopping {
+    right: 0px;
+    bottom: 0;
+    background-color: #d7263d;
+    color: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.item-header .fa-cart-shopping:hover {
+    background-color: #e6c300;
+    transition: all 0.3s ease;
+}
+
+#menu .heading .menu-buttons .fork-but:hover {
+    background-color: #1c1c1c;
+    color: #d7263d;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 26px rgba(139, 0, 0, 0.6);
+}
+
+#menu .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+#menu .row .menu-item {
+    display: flex;
+    margin: 35px;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#menu .row .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+#menu .row .menu-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#menu .row .menu-item .item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu .row .menu-item .item-content .item-header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#menu .row .menu-item .item-content h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+#menu .row .menu-item .item-content .price {
+    color: #e6c300;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d7263d;
+}
+
+.cart-status {
+    color: #ff9800;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#cart-count {
+    background: #d72630;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #e6dcdc;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#offerTable {
+    display: none;
+    /* نخفي الجدول في البداية */
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+th {
+    background-color: rgb(214, 39, 39);
+    color: rgb(22, 21, 21);
+}
+
+tr:hover {
+    background-color: #fceee8;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #2e2c2c;
+}
+
+.new-price {
+    color: #d84315;
+    font-weight: bold;
+}
+
+.type-food {
+    color: #4e342e;
+    font-weight: 500;
+}
+
+.type-drink {
+    color: #6d4c41;
+    font-weight: 500;
+}
+
+
+
+.button-back {
+    /* position:relative; */
+    background-color: #d7263d;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 210px;
+}
+
+
+/*Footer */
+/* Footer styling */
+.site-footer {
+
+    margin-top: 120px;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footer-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Social icons */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    border: none;
+
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: red;
+}
+
+/* Navigation links */
+.footer-nav .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-nav .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav .footer-links a:hover {
+    color: red;
+}
+
+/* Copyright */
+footer p {
+    font-size: 14px;
+    margin: 0;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORK&FLAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class=" nav-container">
+
+            <a class="logo" href="../index.html">Fork & <span> Flame</span></a>
+
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="../about/ABOUT US.html">About</a></li>
+                <li class="nav-item"><a href="../menu/menu.html">Menu</a></li>
+                <li class="nav-item"><a href="../login - signup/login.html">login</a></li>
+                <li class="nav-item"><a href="../contact/contact us.html">Contact us</a></li>
+            </ul>
+
+            <div class="profile-icon">
+                <a href="../profile/index.html">
+                    <img src="../profile/profile-img.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="menu">
+            <div class="container3">
+                <div class="heading">
+                    <h2>OUR MENU</h2>
+                    <div class="menu-buttons">
+                        <button class="fork-but" data-category="ALL">ALL</button>
+                        <button class="fork-but" data-category="BURGER">BURGER</button>
+                        <button class="fork-but" data-category="STEAK">STEAK</button>
+                        <button class="fork-but" data-category="Ribs">Ribs</button>
+                        <button class="fork-but" data-category="SANDWICHES">SANDWICHES</button>
+                        <button class="fork-but" data-category="DRINK">DRINK</button>
+                        <button class="fork-but" id="showOfferBtn" data-category="Special Offers">Special
+                            Offers</button>
+                    </div>
+                </div>
+                <div class="cart-status">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> |
+                    Total: <span id="cart-total">$0</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="menu-item" data-category="BURGER">
+                            <a href="product1.html">
+                                <img src="media/classic-beef-burger-with-melted-cheese-bacon-generative-ai_943405-13880.avif"
+                                    alt="classic">>
+
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Classic Beef Burger</h3>
+                                    <p>Juicy beef patty, lettuce, tomato, onion, pickles, and our special sauce on a
+                                        toasted brioche bun.</p>
+                                    <span class="price">$9</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="BURGER">
+                            <a href="product2.html">
+                                <img src="media/chicken-burger-wooden-table-black-background-still-life-copy-space_636537-237323.avif"
+                                    alt="chicken">
+
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Chicken Fillet Burger</h3>
+                                    <P>Crispy chicken fillet with fresh lettuce and mayo</P>
+                                    <span class="price">$7</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="STEAK">
+                            <a href="product3.html">
+                                <img src="media/steak-black-background-with-spices_875722-17507.avif">
+
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Classic Steak</h3>
+                                    <P>Seared classic steak with cracked black papper and house steak sauce</P>
+                                    <span class="price">$23</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="STEAK">
+                            <a href="product4.html">
+                                <img
+                                    src="media/grilled-meat-barbecue-steak-wooden-cutting-board-with-rosemary-copy-space-top-view_641010-12241.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Ribeye Steak</h3>
+                                    <P>Ribeye steak with garlic butter glaze and roasted jalapenos</P>
+                                    <span class="price">$5</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="Ribs">
+                            <a href="product5.html">
+                                <img
+                                    src="media/hot-grilled-spare-ribs-with-barbecue-sauce-cutting-board-black-background-ai-generative_123827-23428.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Classic Ribs</h3>
+                                    <P>Slow-cooked classic ribs with smoky BBQ glaze and hint a garlic spice</P>
+                                    <span class="price">$12</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="Ribs">
+                            <a href="product6.html">
+                                <img src="media/bbq-ribs-feast-black-background_960396-124322.avif" alt="rib">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword"> BBQ Ribs</h3>
+                                    <P>BBQ ribs with hickory-smoked sauce and a touch of honey bourbon glaze</P>
+                                    <span class="price">$14</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="SANDWICHES">
+                            <a href="product7.html">
+                                <img src="media/classic-chicken-club-sandwich-with-french-fries_636537-213625.avif">
+
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Classic chicken Sandwich</h3>
+                                    <P>Crispy chicken fillet,lettuce,pickles and our signature sauce an a toasted bun
+                                        with french fries</P>
+                                    <span class="price">$14</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="SANDWICHES">
+                            <a href="product8.html">
+                                <img src="media/grilled-beef-sandwich-ciabatta-with-salad-generated-by-ai_188544-21369.avif"
+                                    alt="">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Grilled Beaf Sandwich</h3>
+                                    <P>Tender grilled beef,cheddar,and smoky BBQ sauce</P>
+                                    <span class="price">$12</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="DRINK">
+                            <a href="product9.html">
+                                <img src="media/closeup-refreshing-fresh-mango-juice_157027-3988.avif" alt="">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Mango juice</h3>
+                                    <P> fress squeezed mango delight</P>
+                                    <span class="price">$6</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="DRINK">
+                            <a href="product10.html">
+                                <img src="media/fresh-gourmet-dessert-splashing-sweet-chocolate-liquid-generative-ai_188544-12404.avif"
+                                    alt="">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Strawberry Milkshake</h3>
+                                    <P>sweet strawberry blended with creamy milk</P>
+                                    <span class="price">$7</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col">
+                        <div class="menu-item" data-category="BURGER">
+                            <a href="product11.html">
+                                <img src="media/delicious-spicy-fried-chicken-burger-ads-with-burning-fire-dark-background_662214-219128.avif"
+                                    alt="spicy">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Spicy Crispy Burger</h3>
+                                    <p>Spicy fried chicken with jalapenos and chipotle sauce</p>
+                                    <span class="price">$16</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="BURGER">
+                            <a href="product12.html">
+                                <img src="media/double-hamburger-isolated-black-background-fresh-burger-fast-food-with-beef-cheddar-cheese_174541-1262.avif"
+                                    alt="double">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Double Cheese Burger</h3>
+                                    <p>Double cheeseburger with grilled onions,pickles,and secret burger saucw</p>
+                                    <span class="price">$8</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="STEAK">
+                            <a href="product13.html">
+                                <img src="media/juicy-grilled-meat-with-fire-ai-generative_123827-23464.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Sirloin Steak</h3>
+                                    <P>Grilled sirloin Steak with black pepper crust and garlic herb butter</P>
+                                    <span class="price">$7</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="STEAK">
+                            <a href="product14.html">
+                                <img src="media/grilled-steak-with-spices-dark-with-cutlery_1220-5715.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">T-bone Steak</h3>
+                                    <P>Chargrilled T-bone steak with smoky parpika rub chili garlic sauce</P>
+                                    <span class="price">$25</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="Ribs">
+                            <a href="product15.html">
+                                <img src="media/pork-ribs-smoked-pork-light-play-black-background_42416-97.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Spicy Ribs</h3>
+                                    <P>Spicy ribs with chili rub,jalapenos slices,and fiery chipotle BBQ sauce</P>
+                                    <span class="price">$20</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="Ribs">
+                            <a href="product16.html">
+                                <img src="media/ribs-with-smoky-thyme-honey-glaze_1114710-228195.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Honey Glaze Ribs</h3>
+                                    <P>Honey glazed ribs with sweet garlic marinade and a hint of smoked paprika</P>
+                                    <span class="price">$50</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="SANDWICHES">
+                            <a href="product17.html">
+                                <img src="media/spicy-buffalo-chicken-ranch-sandwich_1170794-31246.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Spicy Bufflo Sandwich</h3>
+                                    <P>Fried chicken tossed in Bufflo sauce,ranch,lettuce,and tomato</P>
+                                    <span class="price">$30</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="SANDWICHES">
+                            <a href="product18.html">
+                                <img
+                                    src="media/gourmet-veggie-sandwich-delight-dark-backdrop-concept-food-photography-vegetarian-cuisine-sandwich-artistry-dark-background-culinary-delight_864588-101399.avif">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Veggie Delight Sandwich</h3>
+                                    <P>Grilled veggies,hummus,feta cheese,and fresh greens on ciabatta</P>
+                                    <span class="price">$33</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="DRINK">
+                            <a href="product19.html">
+                                <img src="media/chocolade-ice-cocktail-with-oreo-cookie_140725-2364.avif" alt="">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">chocolate Milkshake</h3>
+                                    <P>blended with rich chocolate ,fresh milk ,and ascoop of vanilla icecream</P>
+                                    <span class="price">$7</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-category="DRINK">
+                            <a href="product20.html">
+                                <img src="media/vertical-shot-soda-being-poured-glass-full-ice_181624-11970.avif"
+                                    alt="">
+                            </a>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3 class="mediamword">Cola</h3>
+                                    <P>Chilled cola with sparking bubbels and ahint of caramel flavour</P>
+                                    <span class="price">$5</span>
+                                    <i id="cart" class="fa-solid fa-cart-shopping"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="offerTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Offer</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                        <th>Valid Until</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Special Combos + Dessert</td>
+                        <td class="type-food">Food</td>
+                        <td><span class="old-price">25$</span> → <span class="new-price">15$</span></td>
+                        <td>End of this week</td>
+                    </tr>
+                    <tr>
+                        <td>2 cold Beverages</td>
+                        <td class="type-drink">Drink</td>
+                        <td><span class="old-price">10$</span> → <span class="new-price">7$</span></td>
+                        <td>3 days only</td>
+                    </tr>
+                    <tr>
+                        <td>Sandwich + Refreshment</td>
+                        <td class="type-food">Food</td>
+                        <td><span class="old-price">20$</span> → <span class="new-price">12$</span></td>
+                        <td>All of May</td>
+                    </tr>
+                    <tr>
+                        <td>Dessert + cold Beverages</td>
+                        <td class="type-food">Food</td>
+                        <td><span class="old-price">15$</span> → <span class="new-price">9$</span></td>
+                        <td>Weekends Only</td>
+                    </tr>
+                    <tr>
+                        <td>2 Hot Beverages</td>
+                        <td class="type-drink">Drink</td>
+                        <td><span class="old-price">10$</span> → <span class="new-price">6$</span></td>
+                        <td>Until Friday</td>
+                    </tr>
+                    <tr>
+                        <td>Burger & French Fries + Refreshment</td>
+                        <td class="type-food">Food</td>
+                        <td><span class="old-price">30$</span> → <span class="new-price">20$</span></td>
+                        <td>Limited Time</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="menu.html">
+                <button class="button-back">Back to All menu</button>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content-wrapper">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/ABOUT US.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../contact/contact us.html">Contact Us</a></li>
+                    <li><a href="../login - signup/login.html">Login</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">
+                © 2025 IT project David, Geovani, Abdallah, Febronia, Samah, Rovan, Shahd, Ahmed
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
