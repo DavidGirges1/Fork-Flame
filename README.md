@@ -26,6 +26,7 @@ This project was proudly built by:
 - **David E. Girges**
 - **Giovani George**
 - **Abdallah Nasser**
+- **Samah Waleed**
 - **Shahd Elghandour**
 - **Febronia Adel**
 - **Rowan Refaat**
